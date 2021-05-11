@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    text-decoration: none;
+    list-style: none;
+}
+/*đưa danh sách ra chính giữa màn hình*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f6f6;
+}
+.container{
+    width:400px;
+    border-bottom: 20px solid #03a9f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*Thiết lập style cho thẻ h2*/
+.container h2{
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.container ul{
+   position: relative;
+   background: #fff;
+}
+
+.container ul li {
+   list-style: none;
+   padding: 10px;
+   width: 100%;
+   background: #fff;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   transition: transform 0.5s;
+}
+.container ul a{
+    color: crimson;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+.container ul li span{
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   background: #25bcff;
+   color: #fff;
+   display: inline-block;
+   border-radius: 50%;
+   margin-right: 40px;
+   font-size:16px;
+   font-weight: bold;
+}
+
+.container ul:hover li {
+   opacity: 0.2;
+}
+.container ul li:hover{
+   transform: scale(1.1);
+   z-index: 10;
+   background: #25bcff;
+   box-shadow: 0 5px 25px rgba(0,0,0,.2);
+   color: #fff;
+   opacity: 1;
+}
+.container ul li:hover span {
+   background: #fff;
+   color: #25bcff;
+}
