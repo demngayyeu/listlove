@@ -32,6 +32,16 @@ body{
     text-align: center;
 }
 
+.container p{
+   color: #fff;
+   background: #03a9f4;
+   padding: 10px 20px;
+   font-size: 14px;
+   font-weight: 700;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
 .container ul{
    position: relative;
    background: #fff;
@@ -78,4 +88,8 @@ body{
 .container ul li:hover span {
    background: #fff;
    color: #25bcff;
+}
+
+#footer a{
+   padding-left: 20px;
 }
